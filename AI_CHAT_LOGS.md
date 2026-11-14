@@ -1181,4 +1181,108 @@ Do it soon: the code expires in about 15 minutes. If anything on the page looks 
 The login went through, so you must have entered the code. Next, I'll refresh the chat log so it includes today's messages, then push.
 
 > 🔧 ran a command: Confirm login and connect git to gh  
-> 🔧 used tool export_transcript
+> 🔧 used tool export_transcript  
+> 🔧 ran a command: Regenerate chat log and scan for private info
+
+### 🤖 Claude
+
+The log is clean of private info. It does include the two GitHub login codes; they're already used up and harmless, but I'll blank them out anyway. Then commit, merge GitHub's README and push.
+
+> 🔧 ran a command: Commit chat log and fetch GitHub's starter commit  
+> 🔧 ran a command: Merge starter README keeping ours, then push
+
+### 🤖 Claude
+
+Pushed, and your README was kept. Now inviting Mr. Cochran, as you approved earlier:
+
+> 🔧 ran a command: Look up and invite juliancochran as collaborator
+
+### 🤖 Claude
+
+The invite is sent; it shows as pending until Mr. Cochran accepts. Now checking what actually landed on GitHub:
+
+> 🔧 ran a command: Compare GitHub files against local and check visibility
+
+### 🤖 Claude
+
+All 25 files are on GitHub, matching your Mac exactly, and the repo is private. Two last checks: that the README displays properly on GitHub, and that a fresh download of the repo runs.
+
+> 🔧 used tool browser_batch  
+> 🔧 ran a command: Clone from GitHub and run tests and training  
+> 🔧 ran a command: Find the submission rows in the rubric check  
+> 🔧 ran a command: Update rubric check, commit and push  
+> 🔧 wrote `temple-dash-github-upload.md`  
+> 🔧 ran a command: Update the memory index line
+
+### 🤖 Claude
+
+Your project is on GitHub: **https://github.com/gspamula/Project03_RL**. The repo is private, and the page is open in your Chrome tab.
+
+**What I did**
+- Refreshed `AI_CHAT_LOGS.md` to include today's messages and blanked out the used-up login codes. It contains no private info.
+- Merged in the README that GitHub auto-created and kept your real one.
+- Pushed all 25 files in 9 commits, then made sure the file list on GitHub exactly matches your Mac.
+- **Invited `juliancochran`** as a collaborator with write access. It shows as pending until he accepts.
+
+**Final check on the uploaded version.** I downloaded a fresh copy from GitHub and tested it:
+- ✅ All 14 tests pass.
+- ✅ The trained brain from GitHub wins **500 of 500** games against a perfect monk.
+- ✅ Training from scratch works.
+- ✅ The README shows correctly on GitHub, including both GIFs and the chart.
+- ✅ [RUBRIC_CHECK.md](RUBRIC_CHECK.md) is updated and pushed.
+
+**Rubric status:** everything the code and docs can cover is done. These are left, and only you can do them:
+1. **Submit in Veracross:** `https://github.com/gspamula/Project03_RL.git`
+2. **Fill in the 3 README placeholders:** your name, the resource links you read, and "What I did" in your own words. Then commit and push from PyCharm, or ask me.
+3. **Presentation:** practice once with [PRESENTATION.md](PRESENTATION.md), and be ready to explain the code in the oral defense.
+4. **Blog post** (15 points) and **peer reviews** (10 points).
+
+One small note: the folder on your Mac is still named `xx_PyGAIme`, while the repo is `Project03_RL` as the brief asks. That only matters if Mr. Cochran checks the PyCharm project name.
+
+## 🧑 Me  
+*2026-11-14 20:08*
+
+delete presnaton md an dhaminze the an gayge of the readme
+
+> 🔧 used tool Skill  
+> 🔧 ran a command: Remove PRESENTATION.md and find references to it  
+> 🔧 read `banned-list.md`  
+> 🔧 ran a command: Find references to the deleted presentation file  
+> 🔧 read `discourse-tells.md`  
+> 🔧 wrote `README.md`
+
+### 🤖 Claude
+
+The new README is written. Next: scanning it for any leftover AI tells, and updating the rubric check, which still points to PRESENTATION.md and some old section names.
+
+> 🔧 ran a command: Scan README for AI tells and stale references  
+> 🔧 ran a command: Fix rubric refs; check README links and anchors  
+> 🔧 ran a command: Commit README rewrite and deletion locally
+
+### 🤖 Claude
+
+That commit failed: the README and checklist changes didn't save because I listed the already-removed file. Fixing:
+
+> 🔧 ran a command: Commit README rewrite and file deletion
+
+### 🤖 Claude
+
+PRESENTATION.md is deleted and the README is rewritten. The first commit attempt failed, so I fixed it, and now both changes are committed on your Mac. GitHub still has the old README until you push.
+
+**What changed in the README**
+- **Voice:** it reads like you wrote it, in first person ("I used a table instead of a neural network because…", "I kept 3 squares anyway…").
+- **Removed the AI-writing habits:** emoji headings, bold labels at the start of bullets, em dashes, "→" arrows, and wrap-up lines like "the challenge grows with the student". A scan finds no dashes and no flagged words left.
+- **Plain paragraphs** replace the bulleted lists in the extras, the experiment conclusions and the AI-use section.
+- **More honest about the uncertain results.** The wall-penalty gap (3,300 vs 3,400 games) is small enough that it might just be noise across three runs. And I never directly tested my reason for keeping 3 squares of vision. Both are stated now.
+- **A tip for readers** near the top: if you only try one thing, run `--fresh` and press SPACE.
+
+**What stayed the same:** every number, table, command, file link, the GIFs, the chart, the formula and your three placeholders. I checked that every link and section jump works.
+
+**PRESENTATION.md** is gone, and the rubric check no longer points to it. Its two useful lines (how to demo, and what to be ready to explain in the oral defense) are now in RUBRIC_CHECK.md.
+
+When you push, I'll refresh the chat log first so it includes this part of the conversation.
+
+## 🧑 Me  
+*2026-11-14 20:13*
+
+push it
