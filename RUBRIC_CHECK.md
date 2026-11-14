@@ -14,11 +14,11 @@ Checked against `Proj03_RL_PygAIme.pdf` (the project brief and its rubric) on 20
 | Learning algorithm that improves over iterations | ✅ | Q-learning, `agent.py`. Win rate goes from ~0% to 100% (test) |
 | Coded, **tested**, refined | 🔧 | Added `tests.py` (14 unit tests) and `experiments.py` (8 designs × 3 seeds) |
 | Presented to classmates | 🙋 | See `PRESENTATION.md` |
-| PyCharm project called **`Project03_RL`** | 🙋 | The folder is `xx_PyGAIme`. Check with Mr. Cochran which name he wants; rename the folder/repo if needed |
-| Shared to GitHub; all files + companion data committed | 🙋 | Not a git repo yet. 🔧 Fixed a blocker: `training_log.csv` was **1.58 GB** (GitHub's limit is 100 MB per file). The log now writes one row per 100 episodes; the old file is in your Trash |
-| Add `juliancochran` as a collaborator | 🙋 | On GitHub: Settings → Collaborators |
+| PyCharm project called **`Project03_RL`** | ✅ / 🙋 | The GitHub repo is named **`Project03_RL`**. The folder on your Mac is still `xx_PyGAIme`; that only matters if Mr. Cochran checks the PyCharm project name |
+| Shared to GitHub; all files + companion data committed | ✅ | Pushed to the private repo https://github.com/gspamula/Project03_RL: all 25 files, including the trained brain, `results/` and `docs/`. A fresh clone passes all tests and the brain wins 500/500 games. 🔧 Fixed a blocker: `training_log.csv` was **1.58 GB** (GitHub's limit is 100 MB per file). The log now writes one row per 100 episodes; the old file is in your Trash |
+| Add `juliancochran` as a collaborator | ✅ | Invite sent (write access). It shows as *pending* until he accepts |
 | README with collaboration, how to run/test, extra info | 🔧 | README sections "Quick start" (run), "Testing" and "Resources, collaboration and AI use" |
-| Submit repo HTTPS link in Veracross | 🙋 | |
+| Submit repo HTTPS link in Veracross | 🙋 | Submit `https://github.com/gspamula/Project03_RL.git` (the green **Code** button → HTTPS) |
 | Honor code: document AI use **in the code** and explain how it was used | 🔧 | "AI assistance" note added to the top of every `.py` file; the README's "AI use" part explains it in detail; the full chat is in `AI_CHAT_LOGS.md` (re-export it right before the final GitHub push so it's complete). 🙋 Finish the "What I did" part in your own words |
 | Document online resources used | 🔧 / 🙋 | README "Resources" list added. Fill in the links you actually read |
 
@@ -91,7 +91,8 @@ Checked against `Proj03_RL_PygAIme.pdf` (the project brief and its rubric) on 20
 ### 7. Meeting Project and Submission Guidelines (5 pts)
 *Needs: GitHub repo, regular commits, all code and data pushed, teacher added, link submitted.*
 
-🙋 All of this is still to do. The brief says the repo *can be public*, while the rubric says *private*; a **private** repo satisfies both. Make several commits, not one upload at the end.
+✅ Private GitHub repo (it satisfies both the brief's "can be public" and the rubric's "private"), 8 commits so far, all code and data pushed, teacher invited.
+🙋 Still to do: submit the link in Veracross, and keep committing and pushing as you make changes, e.g. after filling in the README placeholders.
 
 ---
 
