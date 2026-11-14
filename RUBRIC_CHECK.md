@@ -17,10 +17,10 @@ Checked against `Proj03_RL_PygAIme.pdf` (the project brief and its rubric) on 20
 | PyCharm project called **`Project03_RL`** | 🙋 | The folder is `xx_PyGAIme`. Check with Mr. Cochran which name he wants; rename the folder/repo if needed |
 | Shared to GitHub; all files + companion data committed | 🙋 | Not a git repo yet. 🔧 Fixed a blocker: `training_log.csv` was **1.58 GB** (GitHub's limit is 100 MB per file). The log now writes one row per 100 episodes; the old file is in your Trash |
 | Add `juliancochran` as a collaborator | 🙋 | On GitHub: Settings → Collaborators |
-| README with collaboration, how to run/test, extra info | 🔧 | README rewritten: sections 2 (run), 6 (test), 9 (collaboration) |
+| README with collaboration, how to run/test, extra info | 🔧 | README sections "Quick start" (run), "Testing" and "Resources, collaboration and AI use" |
 | Submit repo HTTPS link in Veracross | 🙋 | |
-| Honor code: document AI use **in the code** and explain how it was used | 🔧 | "AI assistance" note added to the top of every `.py` file; README section 10 explains it in detail; the full chat is in `AI_CHAT_LOGS.md` (re-export it right before the final GitHub push so it's complete). 🙋 Finish the "What I did" part in your own words |
-| Document online resources used | 🔧 / 🙋 | README section 8 added. Fill in the links you actually read |
+| Honor code: document AI use **in the code** and explain how it was used | 🔧 | "AI assistance" note added to the top of every `.py` file; the README's "AI use" part explains it in detail; the full chat is in `AI_CHAT_LOGS.md` (re-export it right before the final GitHub push so it's complete). 🙋 Finish the "What I did" part in your own words |
+| Document online resources used | 🔧 / 🙋 | README "Resources" list added. Fill in the links you actually read |
 
 ---
 
@@ -31,11 +31,11 @@ Checked against `Proj03_RL_PygAIme.pdf` (the project brief and its rubric) on 20
 
 | Item | Status | Where |
 |---|---|---|
-| Agent–environment loop | ✅ | README §3 diagram, `env.py` docstring |
-| State and action spaces | ✅ 🔧 | README §3, now with a table explaining *why* each part of the state is there |
-| Reward function | ✅ 🔧 | README §3, now with evidence for each reward |
-| Problem the agent solves | 🔧 | New README §1 |
-| Justify the choice of RL approach | 🔧 | New "Why Q-learning, and not DQN?" in README §3 |
+| Agent–environment loop | ✅ | README "How the ninja learns" diagram, `env.py` docstring |
+| State and action spaces | ✅ 🔧 | README "How the ninja learns", now with a table explaining *why* each part of the state is there |
+| Reward function | ✅ 🔧 | README "How the ninja learns", now with evidence for each reward |
+| Problem the agent solves | 🔧 | README intro and "The game" section |
+| Justify the choice of RL approach | 🔧 | "Why a Q-table instead of a neural network?" in README "How the ninja learns" |
 | **You can explain it out loud** | 🙋 | This is graded in your oral defense. See the Q&A in `PRESENTATION.md` |
 
 ### 2. Technical Implementation (10 pts)
@@ -57,8 +57,8 @@ Checked against `Proj03_RL_PygAIme.pdf` (the project brief and its rubric) on 20
 |---|---|---|
 | State space well-defined and justified | ✅ 🔧 | Experiments prove each part matters (17% win without the monk position, 50% without the scroll spot) |
 | Reward function constructed and tested | 🔧 | The experiments tested removing each penalty. Honest finding: the wall penalty is optional |
-| Action policy justified | 🔧 | New ε-greedy section in README §3 (why explore, why decay, why keep 5%) |
-| **Evidence of iteration and tuning** | 🔧 | Two empty "your experiment" rows before. Now: an 8-design × 3-seed experiment table, a learning-curve chart, and a 6-version development history (README §5) |
+| Action policy justified | 🔧 | New ε-greedy section in README "How the ninja learns" (why explore, why decay, why keep 5%) |
+| **Evidence of iteration and tuning** | 🔧 | Two empty "your experiment" rows before. Now: an 8-design × 3-seed experiment table, a learning-curve chart, and a 6-version development history (README "Results" and "How the design evolved") |
 
 ### 4. Presentation and Communication (10 pts)
 *Needs: explain the RL process, agent design, rewards, results; "demonstrates the agent learning in real time"; answer questions.*
@@ -66,7 +66,7 @@ Checked against `Proj03_RL_PygAIme.pdf` (the project brief and its rubric) on 20
 | Item | Status | Notes |
 |---|---|---|
 | Live learning demo | ✅ | `python main.py --fresh`, then SPACE for turbo: the win-rate graph climbs and the monk levels up |
-| Training results to show | 🔧 | `results/learning_curves.png` and the experiments table |
+| Training results to show | 🔧 | Before/after GIFs in `docs/`, `results/learning_curves.png` and the experiments table |
 | Audience participation | ✅ | `--mode play`: a classmate plays the monk |
 | Talk structure and Q&A prep | 🔧 | New `PRESENTATION.md` |
 | Actually presenting | 🙋 | Practice once with a timer |
@@ -81,12 +81,12 @@ Checked against `Proj03_RL_PygAIme.pdf` (the project brief and its rubric) on 20
 
 | Item | Status |
 |---|---|
-| Project objective | 🔧 README §1 |
-| RL algorithm design | ✅ README §3 |
-| Code structure | ✅ README §7 (now includes tests, experiments, results) |
-| Training results | 🔧 README §5: chart, table, conclusions |
+| Project objective | 🔧 README intro and "The game" section |
+| RL algorithm design | ✅ README "How the ninja learns" |
+| Code structure | ✅ README "Project structure" (includes tests, experiments, results, docs) |
+| Training results | 🔧 README "Results": before/after GIFs, chart, table, conclusions |
 | Inline comments | 🔧 Every file has a header docstring. 33 missing class/function docstrings were added, so every class and function now has one (checked automatically); more line comments were added in `renderer.py` |
-| Design choices explained | 🔧 README §3 and §5 "What the experiments taught me" |
+| Design choices explained | 🔧 README "How the ninja learns" and "What I learned from them" |
 
 ### 7. Meeting Project and Submission Guidelines (5 pts)
 *Needs: GitHub repo, regular commits, all code and data pushed, teacher added, link submitted.*
