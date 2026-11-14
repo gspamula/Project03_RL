@@ -13,7 +13,7 @@ Checked against `Proj03_RL_PygAIme.pdf` (the project brief and its rubric) on 20
 | "Game starts without knowing its rules" | ✅ | Q-table starts empty, ε = 1.0. Rules live only in `env.py`. `--fresh` shows this live |
 | Learning algorithm that improves over iterations | ✅ | Q-learning, `agent.py`. Win rate goes from ~0% to 100% (test) |
 | Coded, **tested**, refined | 🔧 | Added `tests.py` (14 unit tests) and `experiments.py` (8 designs × 3 seeds) |
-| Presented to classmates | 🙋 | See `PRESENTATION.md` |
+| Presented to classmates | 🙋 | Demo with `python main.py --fresh` and SPACE for turbo, then `--mode play` with a classmate |
 | PyCharm project called **`Project03_RL`** | ✅ / 🙋 | The GitHub repo is named **`Project03_RL`**. The folder on your Mac is still `xx_PyGAIme`; that only matters if Mr. Cochran checks the PyCharm project name |
 | Shared to GitHub; all files + companion data committed | ✅ | Pushed to the private repo https://github.com/gspamula/Project03_RL: all 25 files, including the trained brain, `results/` and `docs/`. A fresh clone passes all tests and the brain wins 500/500 games. 🔧 Fixed a blocker: `training_log.csv` was **1.58 GB** (GitHub's limit is 100 MB per file). The log now writes one row per 100 episodes; the old file is in your Trash |
 | Add `juliancochran` as a collaborator | ✅ | Invite sent (write access). It shows as *pending* until he accepts |
@@ -35,8 +35,8 @@ Checked against `Proj03_RL_PygAIme.pdf` (the project brief and its rubric) on 20
 | State and action spaces | ✅ 🔧 | README "How the ninja learns", now with a table explaining *why* each part of the state is there |
 | Reward function | ✅ 🔧 | README "How the ninja learns", now with evidence for each reward |
 | Problem the agent solves | 🔧 | README intro and "The game" section |
-| Justify the choice of RL approach | 🔧 | "Why a Q-table instead of a neural network?" in README "How the ninja learns" |
-| **You can explain it out loud** | 🙋 | This is graded in your oral defense. See the Q&A in `PRESENTATION.md` |
+| Justify the choice of RL approach | 🔧 | The paragraph on why a table instead of a neural network, in README "How the ninja learns" |
+| **You can explain it out loud** | 🙋 | This is graded in your oral defense. Be ready to explain the state, the rewards, α, γ and ε, and the timeout rule |
 
 ### 2. Technical Implementation (10 pts)
 *Needs: well-organized, efficient code; complete and correct RL pipeline (environment → state → reward → action selection → improvement).*
@@ -57,8 +57,8 @@ Checked against `Proj03_RL_PygAIme.pdf` (the project brief and its rubric) on 20
 |---|---|---|
 | State space well-defined and justified | ✅ 🔧 | Experiments prove each part matters (17% win without the monk position, 50% without the scroll spot) |
 | Reward function constructed and tested | 🔧 | The experiments tested removing each penalty. Honest finding: the wall penalty is optional |
-| Action policy justified | 🔧 | New ε-greedy section in README "How the ninja learns" (why explore, why decay, why keep 5%) |
-| **Evidence of iteration and tuning** | 🔧 | Two empty "your experiment" rows before. Now: an 8-design × 3-seed experiment table, a learning-curve chart, and a 6-version development history (README "Results" and "How the design evolved") |
+| Action policy justified | 🔧 | "Picking moves (ε-greedy)" in README "How the ninja learns" (why explore, why decay, why keep 5%) |
+| **Evidence of iteration and tuning** | 🔧 | Two empty "your experiment" rows before. Now: an 8-design × 3-seed experiment table, a learning-curve chart, and a 6-version development history (README "Results" and "How the design changed") |
 
 ### 4. Presentation and Communication (10 pts)
 *Needs: explain the RL process, agent design, rewards, results; "demonstrates the agent learning in real time"; answer questions.*
@@ -68,7 +68,6 @@ Checked against `Proj03_RL_PygAIme.pdf` (the project brief and its rubric) on 20
 | Live learning demo | ✅ | `python main.py --fresh`, then SPACE for turbo: the win-rate graph climbs and the monk levels up |
 | Training results to show | 🔧 | Before/after GIFs in `docs/`, `results/learning_curves.png` and the experiments table |
 | Audience participation | ✅ | `--mode play`: a classmate plays the monk |
-| Talk structure and Q&A prep | 🔧 | New `PRESENTATION.md` |
 | Actually presenting | 🙋 | Practice once with a timer |
 
 ### 5. Innovation and Creativity (5 pts)
@@ -86,7 +85,7 @@ Checked against `Proj03_RL_PygAIme.pdf` (the project brief and its rubric) on 20
 | Code structure | ✅ README "Project structure" (includes tests, experiments, results, docs) |
 | Training results | 🔧 README "Results": before/after GIFs, chart, table, conclusions |
 | Inline comments | 🔧 Every file has a header docstring. 33 missing class/function docstrings were added, so every class and function now has one (checked automatically); more line comments were added in `renderer.py` |
-| Design choices explained | 🔧 README "How the ninja learns" and "What I learned from them" |
+| Design choices explained | 🔧 README "How the ninja learns" and the paragraphs under "Experiments" |
 
 ### 7. Meeting Project and Submission Guidelines (5 pts)
 *Needs: GitHub repo, regular commits, all code and data pushed, teacher added, link submitted.*
