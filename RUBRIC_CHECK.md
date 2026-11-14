@@ -19,8 +19,8 @@ Checked against `Proj03_RL_PygAIme.pdf` (the project brief and its rubric) on 20
 | Add `juliancochran` as a collaborator | ✅ | Invite sent (write access). It shows as *pending* until he accepts |
 | README with collaboration, how to run/test, extra info | 🔧 | README sections "Quick start" (run), "Testing" and "Resources, collaboration and AI use" |
 | Submit repo HTTPS link in Veracross | 🙋 | Submit `https://github.com/gspamula/Project03_RL.git` (the green **Code** button → HTTPS) |
-| Honor code: document AI use **in the code** and explain how it was used | 🔧 | "AI assistance" note added to the top of every `.py` file; the README's "AI use" part explains it in detail; the full chat is in `AI_CHAT_LOGS.md` (re-export it right before the final GitHub push so it's complete). 🙋 Finish the "What I did" part in your own words |
-| Document online resources used | 🔧 / 🙋 | README "Resources" list added. Fill in the links you actually read |
+| Honor code: document AI use **in the code** and explain how it was used | ✅ | "AI assistance" note at the top of every `.py` file; the README's "AI use" section explains what Claude did; the full chat is in `AI_CHAT_LOGS.md` (refreshed before each push) |
+| Document online resources used | ✅ | README "Resources" lists the 5 links from the brief |
 
 ---
 
@@ -91,7 +91,7 @@ Checked against `Proj03_RL_PygAIme.pdf` (the project brief and its rubric) on 20
 *Needs: GitHub repo, regular commits, all code and data pushed, teacher added, link submitted.*
 
 ✅ Private GitHub repo (it satisfies both the brief's "can be public" and the rubric's "private"), 8 commits so far, all code and data pushed, teacher invited.
-🙋 Still to do: submit the link in Veracross, and keep committing and pushing as you make changes, e.g. after filling in the README placeholders.
+🙋 Still to do: submit the link in Veracross, and keep committing and pushing as you make changes, e.g. after any later edits.
 
 ---
 

@@ -211,16 +211,17 @@ There are 14 tests in [`tests.py`](tests.py). They check that the maze loads, th
 ## Resources, collaboration and AI use
 
 ### Resources
-- The project brief's suggested reading on game AI and reinforcement learning *(list the specific links you read)*
-- Sutton & Barto, *Reinforcement Learning: An Introduction* (2nd ed.), chapter 6, which covers Q-learning and ε-greedy
-- [Pygame documentation](https://www.pygame.org/docs/)
+I read the links suggested in the project brief:
+- [The Total Beginner's Guide to Game AI](https://www.gamedev.net/tutorials/programming/artificial-intelligence/the-total-beginners-guide-to-game-ai-r4942/) (GameDev.net)
+- [Where would I start if I wanted to create an AI agent to play a 2D game?](https://ai.stackexchange.com/questions/39765/where-would-i-start-if-i-wanted-to-create-an-ai-agent-to-play-a-2d-game) (AI Stack Exchange)
+- [Create Game AI in Python](https://reintech.io/blog/create-game-ai-python-tutorial) (Reintech)
+- [Ultimate Guide for Reinforced Learning, Part 1: Creating a Game](https://towardsdatascience.com/ultimate-guide-for-reinforced-learning-part-1-creating-a-game-956f1f2b0a91/) (Towards Data Science)
+- [Teach AI to Play Snake with Reinforcement Learning](https://www.python-engineer.com/posts/teach-ai-snake-reinforcement-learning/) (Python Engineer)
 
 ### Collaboration
-Individual project by *(your name)*. *(List any classmates who helped and how. No code was shared with classmates.)*
+Individual project by Ganapathi Pamula. No code was shared with classmates.
 
 ### AI use (DA Honor Code)
 I built this with help from Claude (Anthropic), an AI coding assistant, through Claude Code. Every code file has an "AI assistance" note at the top, and the whole conversation is in [`AI_CHAT_LOGS.md`](AI_CHAT_LOGS.md).
 
 Claude brainstormed game ideas with me and wrote the first version of every file. It made the changes I asked for: the temple look, swapping the samurai for a monk, the red and white walls, the moving scroll, and turbo in watch mode. It suggested the curriculum, the both-sides-learn mode, and the play mode. After checking the project against the rubric, it added the unit tests, the experiments, the timeout fix and the documentation.
-
-I chose the game, the theme and the design changes, ran and tested the game, and trained the final ninja. *(Add what you changed or tuned yourself and what you learned in order to understand the code.)*
