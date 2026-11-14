@@ -1286,3 +1286,55 @@ When you push, I'll refresh the chat log first so it includes this part of the c
 *2026-11-14 20:13*
 
 push it
+
+> 🔧 used tool export_transcript  
+> 🔧 ran a command: Refresh chat log, commit, and push  
+> 🔧 ran a command: Verify GitHub matches local after push  
+> 🔧 ran a command: Confirm the new README is live on GitHub
+
+### 🤖 Claude
+
+Pushed to **https://github.com/gspamula/Project03_RL**:
+
+- The new README is live on GitHub.
+- PRESENTATION.md is deleted there too.
+- `AI_CHAT_LOGS.md` now covers the whole conversation through this request. The login codes are blanked out, and it has no private info.
+- GitHub matches your Mac exactly: 24 files, and the latest commit is the chat-log update.
+
+**Still to do:**
+- Fill in the three README placeholders (your name, the resources you read, and "What I did").
+- Submit the link in Veracross.
+- Present, write the blog post, and do the peer reviews.
+
+## 🧑 Me  
+*2026-11-14 20:30*
+
+> Fill in the three README placeholders (your name, the resources you read, and “What I did”).
+
+my name is Ganapathi Pamula the roesuces i read were thoes from the rubic and take out the what i did thing
+
+> 🔧 ran a command: Fill name and resources, remove What I did part
+
+### 🤖 Claude
+
+The README placeholders are filled in. Updating the matching rows in the rubric check:
+
+> 🔧 ran a command: Find placeholder rows in the rubric check  
+> 🔧 ran a command: Update rubric rows and commit locally
+
+### 🤖 Claude
+
+The README is filled in and committed on your Mac:
+
+- **Name:** "Individual project by Ganapathi Pamula. No code was shared with classmates."
+- **Resources:** the 5 links from the project brief, each with its title and site (GameDev.net, AI Stack Exchange, Reintech, Towards Data Science, Python Engineer). I removed Sutton & Barto and the Pygame docs, since you said you read the brief's links.
+- **"What I did":** removed. The AI-use section now describes what Claude did and links to the full chat log, which still covers the honor-code documentation.
+
+I also updated [RUBRIC_CHECK.md](RUBRIC_CHECK.md): the resources and AI-use rows are now marked done.
+
+No placeholders are left. What remains is outside the code: submitting the Veracross link, presenting, the blog post and the peer reviews.
+
+## 🧑 Me  
+*2026-11-14 20:44*
+
+Push it
